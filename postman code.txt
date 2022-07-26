@@ -1,0 +1,48 @@
+insert
+Post	http://localhost:8080/api/v1/students
+{
+        "id":100, 
+        "Rollno":1,
+        "firstName":"shanthi",
+        "lastName":"magath",
+        "parentname":"kumari",
+        "dueDate": "2022/4/2",
+        "phno":"9900990099",
+        "emailId": "shanthi@gmail.com"
+}
+
+{
+"id":200,
+ 
+        "Rollno":2,
+        "firstName":"raji",
+        "lastName":"sahid",
+        "parentname":"sid",
+        "dueDate": "2022/4/2",
+        "phno":"9900990679",
+        "emailId": "raji@gmail.com"
+}
+
+
+Update	
+PUT	      http://localhost:8080/api/v1/students/100   
+{
+"id":100,
+ 
+        "Rollno":1,
+        "firstName":"magath",
+        "lastName":"rajan",
+        "parentname":"kumari",
+        "dueDate": "2022/4/2",
+        "phno":"9900990099";
+        "emailId": "magath@gmail.com"
+}
+
+delete
+Delete	http://localhost:8080/api/v1/students/100
+
+view	=> view particular id 100
+Get	http://localhost:8080/api/v1/students/100
+
+view all fields
+GET	http://localhost:8080/api/v1/students
